@@ -36,7 +36,7 @@ def get_data():
         results_list = []
         print(f"total matches: {matches_count}")
         print(f"total pages: {pages_count}")
-        for page_no in range(1, 2):
+        for page_no in range(1, pages_count + 1):
             params = {
                 "jsontype": "search_result.aspx",
                 "startdate": start_date.strftime("%Y%m%d"),
